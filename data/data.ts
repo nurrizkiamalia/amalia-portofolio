@@ -1,6 +1,6 @@
 import html from "@/public/icon/html.png"
 import css from "@/public/icon/css.png"
-import js from "@/public/icon/js.png"
+import js from "@/public/icon/Js.png"
 import ts from "@/public/icon/Typescript.png"
 import reactjs from "@/public/icon/React.png"
 import nextjs from "@/public/icon/nextjs.webp"
