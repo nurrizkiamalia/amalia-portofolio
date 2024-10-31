@@ -1,16 +1,26 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { DM_Mono, DM_Serif_Display, Montserrat} from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const dmMono = DM_Mono({
+  subsets: ["latin"],
+  variable: "--font-dm-mono",
+  display: "swap",
+  weight: ["300","400","500"],
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const dmSerif = DM_Serif_Display({
+  subsets: ["latin"],
+  variable: "--font-dm-serif",
+  display: "swap",
+  weight: ["400"],
+});
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+  display: "swap",
+  weight: ["300","400","500","600","700","800","900"],
 });
 
 export const metadata: Metadata = {
@@ -26,9 +36,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${dmMono.variable} ${dmSerif.variable} ${montserrat.variable} bg-dspLightGrayBg antialiased px-5 md:px-10 lg:px-20 text-dspBlack font-dmMono`}
       >
-        {children}
+        <div className="border-x-2 border-dashed border-black">
+          <Header />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );
