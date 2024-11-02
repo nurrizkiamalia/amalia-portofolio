@@ -1,11 +1,15 @@
+"use client"
+
 import { headerLinks } from "@/data/data";
 import Link from "next/link";
 import Buttons from "../Buttons";
 import { IoIosArrowForward } from "react-icons/io";
+import { useRouter } from "next/navigation";
 
 const flexs = "flex items-center justify-center";
 
 const Header: React.FC = () => {
+  const router = useRouter();
   return (
     <div className="font-dmMono hidden lg:grid grid-cols-5 border-b-2 border-dashed border-black">
       <div className={`col-span-1 ${flexs} py-5 cursor-alias`}>
@@ -28,7 +32,7 @@ const Header: React.FC = () => {
       </div>
       <div className={`col-start-5 col-span-1 ${flexs}`}>
         <div className="bg-gradient-to-r from-dspOrange to-dspOrangeYellow w-fit rounded-full p-1 shadow-lg shadow-dspLightGray2">
-          <Buttons className="px-2 bg-dspLightGrayBg hover:bg-dspOrange hover:text-white">
+          <Buttons className="px-2 bg-dspLightGrayBg hover:bg-dspOrange hover:text-white" onClick={ () => router.push('/contact')}>
             Contact Me
             <span className="bg-dspBlack text-white p-1 rounded-full">
               <IoIosArrowForward />

@@ -12,22 +12,24 @@ import whimsical from "@/public/icon/whimsical.png"
 import trello from "@/public/icon/Trello.png"
 import notion from "@/public/icon/notion.png"
 import jira from "@/public/icon/Jira.png"
-
+import { IoHomeOutline, IoFlameOutline } from "react-icons/io5";
+import { BsPersonRolodex } from "react-icons/bs";
+import { GoProjectRoadmap } from "react-icons/go";
 
 export const headerLinks = [
     {
-        links: "#", icon: "IoHomeOutline", text: "Home"
+        links: "#", icon: IoHomeOutline, text: "Home"
     },
     {
-        links: "#about", icon: "BsPersonRolodex ", text: "About"
+        links: "#about", icon: BsPersonRolodex, text: "About"
     },
     {
-        links: "#projects", icon: "GoProjectRoadmap ", text: "Projects"
+        links: "#projects", icon: GoProjectRoadmap, text: "Projects"
     },
     {
-        links: "#skills", icon: "IoFlameOutline ", text: "Skills" //MdAutoAwesome 
+        links: "#skills", icon: IoFlameOutline, text: "Skills"
     },
-]
+];
 
 export const skillsets = [
     {
@@ -55,7 +57,7 @@ export const recentProjects = [
         job: "Full-stack Development",
         webOf: ["Front-end","Back-end","Full-stack"],
         stacks: ["Next.js","TailwindCSS","Typescript","Java","Spring Boot", "PostGreSQL","Docker","CI/CD"],
-        link: "",
+        link: "https://deili-management.vercel.app",
     },
     {
         image: "",
@@ -82,7 +84,7 @@ export const recentProjects = [
         job: "Back-end Development",
         webOf: ["Back-end"],
         stacks: ["Java","Spring Boot","PostGreSQL"],
-        link: "https://www.alphamarch.shop",
+        link: "https://github.com/nurrizkiamalia/Montrack-Exercise",
     },
     {
         image: "",
@@ -91,7 +93,7 @@ export const recentProjects = [
         job: "Front-end Development",
         webOf: ["Front-end"],
         stacks: ["Next.js","TailwindCSS","Typescript","Vercel"],
-        link: "https://www.alphamarch.shop",
+        link: "https://dmr-tech.vercel.app",
     },
     {
         image: "",
@@ -100,7 +102,7 @@ export const recentProjects = [
         job: "Front-end Development",
         webOf: ["Front-end","Back-end","Full-stack"],
         stacks: ["Next.js","TailwindCSS","Typescript","Vercel"],
-        link: "https://www.alphamarch.shop",
+        link: "https://pokemon-website-sigma.vercel.app/",
     },
 ]
 

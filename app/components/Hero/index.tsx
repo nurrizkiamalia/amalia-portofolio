@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
           </span>
         </Buttons>
         <div className="bg-gradient-to-r from-dspOrange to-dspOrangeYellow w-fit rounded-full p-1 shadow-lg shadow-dspLightGray2 ">
-            <Buttons className="px-5 bg-dspLightGrayBg hover:bg-dspOrange hover:text-white" onClick={ () => router.push('#projects')}>My projects</Buttons>
+            <Buttons className="px-5 bg-dspLightGrayBg hover:bg-dspOrange hover:text-white border-none" onClick={ () => router.push('#projects')}>My projects</Buttons>
         </div>
       </div>
     </div>
