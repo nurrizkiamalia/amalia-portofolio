@@ -1,4 +1,3 @@
-import TwoContent from "@/components/TwoContent";
 import Link from "next/link";
 import { FaGithub, FaLinkedin, FaInstagram, FaDribbble } from "react-icons/fa";
 import { FaArrowDownLong, FaArrowRightLong } from "react-icons/fa6";
