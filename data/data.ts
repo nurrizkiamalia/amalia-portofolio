@@ -16,6 +16,13 @@ import { IoHomeOutline, IoFlameOutline } from "react-icons/io5";
 import { BsPersonRolodex } from "react-icons/bs";
 import { GoProjectRoadmap } from "react-icons/go";
 
+import deilimanage from "@/public/deili-management.webp";
+import alphamarch from "@/public/alphamarch.webp";
+import eventeuphoria from "@/public/eventeuphoria.webp";
+import dmrtech from "@/public/DMRTech.webp";
+import deiliproject from "@/public/deili-project.webp";
+import pokemon from "@/public/Pokemon.webp";
+
 export const headerLinks = [
     {
         links: "#", icon: IoHomeOutline, text: "Home"
@@ -51,57 +58,57 @@ export const skillsets = [
 
 export const recentProjects = [
     {
-        image: "",
+        image: deilimanage,
         title: "Deili Management",
-        type: "Task Management Website",
+        type: "Task Management Platform",
         job: "Full-stack Development",
         webOf: ["Front-end","Back-end","Full-stack"],
-        stacks: ["Next.js","TailwindCSS","Typescript","Java","Spring Boot", "PostGreSQL","Docker","CI/CD"],
-        link: "https://deili-management.vercel.app",
+        stacks: ["Next.js","TailwindCSS","Typescript","Java","Spring Boot", "PostGreSQL","Docker","CI/CD","GraphQL"],
+        link: "https://deilimanagement.rizkiamalia.space",
     },
     {
-        image: "",
+        image: alphamarch,
         title: "Alpha March",
-        type: "Multi Warehouse Website",
+        type: "Multi Warehouse Web App",
         job: "Full-stack Development",
         webOf: ["Front-end","Back-end","Full-stack"],
         stacks: ["Next.js","TailwindCSS","Typescript","Java","Spring Boot", "PostGreSQL","Docker","CI/CD"],
         link: "https://www.alphamarch.shop",
     },
     {
-        image: "",
+        image: eventeuphoria,
         title: "Event Euphoria",
-        type: "Event Booking Website",
+        type: "Event Booking Platform",
         job: "Front-end Development",
         webOf: ["Front-end"],
-        stacks: ["Next.js","TailwindCSS","Typescript"],
+        stacks: ["Next.js","TailwindCSS","Typescript","ApexCharts","React Hooks"],
         link: "https://www.eventeuphoria.fun",
     },
     {
-        image: "",
-        title: "Montrack",
-        type: "Money Tracking",
-        job: "Back-end Development",
-        webOf: ["Back-end"],
-        stacks: ["Java","Spring Boot","PostGreSQL"],
-        link: "https://github.com/nurrizkiamalia/Montrack-Exercise",
+        image: deiliproject,
+        title: "Deili Project",
+        type: "AI Generator",
+        job: "AI Web Development",
+        webOf: ["Front-end","Back-end"],
+        stacks: ["Next.js","TailwindCSS","Typescript","AI Integrated","Next.js Server Side","PostgreSQL"],
+        link: "https://deili-project.vercel.app",
     },
     {
-        image: "",
+        image: dmrtech,
         title: "DMRTech",
         type: "Company Profile Website",
         job: "Front-end Development",
         webOf: ["Front-end"],
-        stacks: ["Next.js","TailwindCSS","Typescript","Vercel"],
+        stacks: ["Next.js","TailwindCSS","Typescript","Vercel","API Fetching"],
         link: "https://dmr-tech.vercel.app",
     },
     {
-        image: "",
+        image: pokemon,
         title: "Pokemon Search",
         type: "Search Input",
         job: "Front-end Development",
         webOf: ["Front-end","Back-end","Full-stack"],
-        stacks: ["Next.js","TailwindCSS","Typescript","Vercel"],
+        stacks: ["Next.js","TailwindCSS","Typescript","Vercel","API Fetching"],
         link: "https://pokemon-website-sigma.vercel.app/",
     },
 ]

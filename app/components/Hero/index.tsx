@@ -30,11 +30,11 @@ const Hero: React.FC = () => {
         </div>
         <div className="w-fit flex justify-center z-10">
           <Image
-            src="/profile-picture.jpg"
+            src="/mypic.webp"
             width={300}
             height={300}
             alt=""
-            className="rounded-full w-[200px] sm:w-[245px] md:w-[275px] lg:w-[300px] bg-dspGray border-2 border-white"
+            className="rounded-full w-[200px] sm:w-[245px] md:w-[275px] lg:w-[300px] bg-dspGray p-3 bg-gradient-to-r from-dspOrange to-dspOrangeYellow -rotate-6 hover:rotate-0 transition-all duration-500 hover:scale-105"
           />
         </div>
       </div>

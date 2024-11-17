@@ -32,7 +32,7 @@ const Header: React.FC = () => {
       </div>
       <div className={`col-start-5 col-span-1 ${flexs}`}>
         <div className="bg-gradient-to-r from-dspOrange to-dspOrangeYellow w-fit rounded-full p-1 shadow-lg shadow-dspLightGray2">
-          <Buttons className="px-2 bg-dspLightGrayBg hover:bg-dspOrange hover:text-white" onClick={ () => router.push('/contact')}>
+          <Buttons className="px-2 bg-dspLightGrayBg hover:bg-dspOrange hover:text-white" onClick={ () => router.push('#contact')}>
             Contact Me
             <span className="bg-dspBlack text-white p-1 rounded-full">
               <IoIosArrowForward />
