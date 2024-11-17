@@ -22,7 +22,7 @@ const Skillset: React.FC = () => {
               <h3 className="font-montserrat font-bold text-[25px] md:text-[30px] lg:text-[35px] w-fit">
                 {item.title}
               </h3>
-              <div className="text-dspGray text-sm md:text-base">
+              <div className="text-dspGray text-xs xs:text-sm md:text-base">
                 <p>
                   {item.type} ⦿{" "}
                   {item.stacks.map((item, idx) => (

@@ -49,7 +49,7 @@ const Contact: React.FC = () => {
                 <div key={index} className={`border-b-2 border-dashed border-black ${index === 2 ? "row-start-2 col-span-2" : index == 0 || index == 3 ? "border-r-2 border-dashed border-black" : ""}`}>
                     <div className="p-5 flex flex-col gap-5 ">
                         {item.icon}                        
-                        <Link href={item.link}>{item.text}</Link>
+                        <Link href={item.link} className="text-xs xs:text-base">{item.text}</Link>
                     </div>
                 </div>
                ))}

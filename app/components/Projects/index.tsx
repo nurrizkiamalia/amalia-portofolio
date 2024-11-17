@@ -8,7 +8,7 @@ import { TbPointFilled } from "react-icons/tb";
 
 const Projects: React.FC = () => {
   return (
-    <div className="p-5 md:py-10 border-b-2 border-dashed border-black w-full flex flex-col gap-5 lg:gap-10" id="projects">
+    <div className="p-3 sm:p-5 md:py-10 border-b-2 border-dashed border-black w-full flex flex-col gap-5 lg:gap-10" id="projects">
       <div>
         <Subtitle>Selected Portofolio</Subtitle>
         <HeadingTwo>My Projects</HeadingTwo>
@@ -17,7 +17,7 @@ const Projects: React.FC = () => {
         {recentProjects.map((item, index) => (
           <div key={index} className="w-full h-full">
             <WobbleCard
-              className="bg-dspLightGray border-2 border-dspLightGray2 rounded-xl shadow-sm w-full h-full p-5 lg:p-10 overflow-hidden flex flex-col gap-3"
+              className="bg-dspLightGray border-2 border-dspLightGray2 rounded-xl shadow-sm w-full h-full p-3 sm:p-5 lg:p-10 overflow-hidden flex flex-col gap-3"
             >
               <Image
                 src={item.image}

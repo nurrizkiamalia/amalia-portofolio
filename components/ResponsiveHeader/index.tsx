@@ -16,15 +16,11 @@ const ResponsiveHeader: React.FC = () => {
         const headerRect = headerElement.getBoundingClientRect();
         const footerRect = footerElement.getBoundingClientRect();
 
-        // Hide when reaching footer on all screen sizes
-        if (footerRect.top >= window.innerHeight) {
-          setIsVisible(false);
-        } else if (window.innerWidth >= 1024 && headerRect.bottom < 0) {
-          // Hide when reaching header only on large screens
-          setIsVisible(false);
-        } else {
-          setIsVisible(true);
-        }
+        const isHeaderVisible = headerRect.bottom > 0;
+        const isFooterVisible = footerRect.top < window.innerHeight;
+
+        // Show the responsive header only when both header and footer are not visible
+        setIsVisible(!isHeaderVisible && !isFooterVisible);
       }
     };
 

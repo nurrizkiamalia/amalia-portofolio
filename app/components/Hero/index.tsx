@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { IoIosArrowForward } from "react-icons/io";
 import { TbPointFilled } from "react-icons/tb";
+import me from "@/public/mypic.webp";
 
 const Hero: React.FC = () => {
   const router = useRouter();
@@ -30,15 +31,13 @@ const Hero: React.FC = () => {
         </div>
         <div className="w-fit flex justify-center z-10">
           <Image
-            src="/mypic.webp"
-            width={300}
-            height={300}
-            alt=""
-            className="rounded-full w-[200px] sm:w-[245px] md:w-[275px] lg:w-[300px] bg-dspGray p-3 bg-gradient-to-r from-dspOrange to-dspOrangeYellow -rotate-6 hover:rotate-0 transition-all duration-500 hover:scale-105"
+            src={me}
+            alt="me"
+            className="rounded-full w-[200px] sm:w-[245px] md:w-[275px] lg:w-[300px] bg-dspGray p-1 xs:p-2 md:p-3 bg-gradient-to-r from-dspOrange to-dspOrangeYellow -rotate-6 hover:rotate-0 transition-all duration-500 hover:scale-105"
           />
         </div>
       </div>
-      <div className="flex items-center gap-5">
+      <div className="flex items-center gap-5 text-xs xs:text-sm sm:text-base">
         <Buttons className="px-3 gap-1 bg-dspOrange border-4 text-white border-white shadow-md shadow-dspGray hover:bg-dspBlack" onClick={ () => router.push('#about')}>
           More about me{" "}
           <span className="bg-dspBlack text-white p-1 rounded-full">

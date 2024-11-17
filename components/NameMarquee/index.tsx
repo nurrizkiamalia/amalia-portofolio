@@ -2,7 +2,7 @@ import Marquee from "react-fast-marquee";
 
 const NameMarquee: React.FC = () => {
   return (
-    <div className="flex flex-col antialiased w-full font-montserrat font-extrabold text-[60px] md:text-[90px] lg:text-[120px] leading-[0.8]">
+    <div className="flex flex-col antialiased w-full font-montserrat font-extrabold text-[45px] xs:text-[60px] md:text-[90px] lg:text-[120px] leading-[0.8]">
       <Marquee direction="left" className="h-fit overflow-hidden" loop={0} autoFill  speed={40} pauseOnHover>
         <h1>NUR RIZKI AMALIA•</h1>
       </Marquee>

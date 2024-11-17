@@ -12,6 +12,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        'xs':"400px"
+      },
       animation: {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",

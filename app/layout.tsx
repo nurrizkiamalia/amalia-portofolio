@@ -43,7 +43,7 @@ export default function RootLayout({
           <div id="header">
             <Header />
           </div>
-          <div className="w-full flex justify-center">
+          <div className="w-full h-full flex justify-center">
             <ResponsiveHeader />
           </div>
           {children}

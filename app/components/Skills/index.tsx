@@ -26,13 +26,11 @@ const Skills: React.FC = () => {
             <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-5 text-dspBlack font-montserrat font-bold w-full">
                 {item.stacks.map((item, idx) => (
                   <div key={idx}>
-                    <div className={` p-2 bg-white border-4 border-dspLightGray2 rounded-3xl flex items-center gap-2 w-full text-sm md:text-base`}>
-                      <div className="bg-dspLightGray2 w-14 h-14 flex items-center justify-center rounded-full p-1">
+                    <div className={` p-1 xs:p-2 bg-white border-4 border-dspLightGray2 rounded-3xl flex items-center gap-1 xs:gap-2 w-full text-xs xs:text-sm md:text-base`}>
+                      <div className="xs:bg-dspLightGray2 w-14 h-14 flex items-center justify-center rounded-full p-0 xs:p-1">
                         <Image 
                           src={item.image}
-                          width={35}
-                          height={35}
-                          className=""
+                          className=" w-[25px] h-[25px] xs:w-[35px] xs:h-[35px]"
                           alt="icon"
                         />
                       </div>

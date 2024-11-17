@@ -11,7 +11,7 @@ const flexs = "flex items-center justify-center";
 const Header: React.FC = () => {
   const router = useRouter();
   return (
-    <div className="font-dmMono hidden lg:grid grid-cols-5 border-b-2 border-dashed border-black">
+    <div className="font-dmMono hidden lg:grid grid-cols-5 border-b-2 border-dashed border-black" id="header">
       <div className={`col-span-1 ${flexs} py-5 cursor-alias`}>
         <p className="font-dmSerif text-[35px]">
           Ama<span className="bg-dspOrange  text-white">lia.</span>
