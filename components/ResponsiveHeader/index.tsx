@@ -19,13 +19,12 @@ const ResponsiveHeader: React.FC = () => {
         const isHeaderVisible = headerRect.bottom > 0;
         const isFooterVisible = footerRect.top < window.innerHeight;
 
-        // Show the responsive header only when both header and footer are not visible
         setIsVisible(!isHeaderVisible && !isFooterVisible);
       }
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Initial check
+    handleScroll(); 
 
     return () => {
       window.removeEventListener("scroll", handleScroll);

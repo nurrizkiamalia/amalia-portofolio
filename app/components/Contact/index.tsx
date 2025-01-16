@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaInstagram, FaDribbble } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFigma, FaDribbble } from "react-icons/fa";
 import { FaArrowDownLong, FaArrowRightLong } from "react-icons/fa6";
 import { MdOutlineEmail } from "react-icons/md";
 
@@ -20,9 +20,9 @@ const contactMe = [
         link: "mailto=rizkiamel9@gmail.com"
     },
     {
-        icon: <FaInstagram/>,
-        text: "@lia_is_amalia",
-        link: "https://instagram.com/lia_is_amalia"
+        icon: <FaFigma />,
+        text: "@nurrizkiamalia",
+        link: "https://www.figma.com/@nurrizkiamalia"
     },
     {
         icon: <FaDribbble/>,

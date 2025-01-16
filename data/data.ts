@@ -91,7 +91,7 @@ export const recentProjects = [
         job: "AI Web Development",
         webOf: ["Front-end","Back-end"],
         stacks: ["Next.js","TailwindCSS","Typescript","AI Integrated","Next.js Server Side","PostgreSQL"],
-        link: "https://deili-project.vercel.app",
+        link: "https://github.com/nurrizkiamalia/deili-project",
     },
     {
         image: dmrtech,
