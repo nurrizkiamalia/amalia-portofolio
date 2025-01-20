@@ -60,7 +60,7 @@ export const recentProjects = [
     {
         image: deilimanage,
         title: "Deili Management",
-        type: "Task Management Platform",
+        type: "Task Management Platform (In Progress)",
         job: "Full-stack Development",
         webOf: ["Front-end","Back-end","Full-stack"],
         stacks: ["Next.js","TailwindCSS","Typescript","Java","Spring Boot", "PostGreSQL","Docker","CI/CD","GraphQL"],
